@@ -1,0 +1,6 @@
+---
+title: "Denali"
+output: html_document
+---
+
+![Denali reflected in Wonder Lake by Albert Herring](Wonder_Lake_and_Denali.jpg)

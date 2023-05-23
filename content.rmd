@@ -1,0 +1,8 @@
+---
+title: "Main page"
+output: html_document
+---
+
+* [Photo](content/photo.html)
+* [Life Expectancy](content/life_expectancy.html)
+* [Bio](content/bio.html)

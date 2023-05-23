@@ -1,0 +1,6 @@
+---
+title: "Bio"
+output: html_document
+---
+
+Frances is a National Library of Medicine predoctoral fellow at Oregon Health & Science University. She has a M.S. in Bioscience & Health Policy and a B.S. in Biochemistry & Molecular Biology from Rice University. Frances is a former health policy intern at the Senate HELP Committee and a research assistant at the Pacific Northwest Evidence-based Practice Center. Her dissertation aims to discover and organize potential biases in electronic health record (EHR) data, and apply causal inference to improve research using EHR data. Find out more about Frances’s training on ORCiD: [0000-0001-9459-1195](https://orcid.org/0000-0001-9459-1195)

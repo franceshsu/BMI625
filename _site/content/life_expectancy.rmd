@@ -1,0 +1,38 @@
+---
+title: "Life Expectancy"
+author: "Frances Hsu"
+date: "2023-05-23"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(tidyverse)
+library(gapminder)
+```
+
+```{r, echo=FALSE}
+sumLifeTable <- gapminder %>% group_by(continent, year) %>% 
+  summarize(minLife = min(lifeExp), meanLife = mean(lifeExp), medianLife= median(lifeExp), maxLife = max(lifeExp))
+
+medianLifeTable <- gapminder %>% group_by(continent, year) %>% 
+  summarize(medianLife = median(lifeExp))
+
+KI_palette <- c('#cc79a7','#0072b2','#d55e00','#f0e442','#009e73')
+```
+
+```{r}
+ggplot(medianLifeTable, aes(x=year, y=medianLife, color=continent)) +
+  geom_point() +
+  geom_line(aes(group=continent)) +
+  scale_color_manual(values=KI_palette, guide=NULL) +
+  ggtitle("Median Life Expectancy 1952-2007") +
+  labs(x="Year", y="Median Life Expectancy") +
+  scale_x_continuous(limits=c(1950,2010), breaks=c(1950, 1960, 1970, 1980, 1990, 2000, 2010), minor_breaks=NULL) +
+  theme_minimal() +
+  annotate(x=1955, y=73, geom='text', label="Oceania", color='#009e73') +
+  annotate(x=1955, y=64, geom='text', label="Europe", color='#f0e442') +
+  annotate(x=1955, y=58, geom='text', label="Americas", color='#0072b2') +
+  annotate(x=1953, y=48, geom='text', label="Asia", color='#d55e00') +
+  annotate(x=1953, y=42, geom='text', label="Africa", color='#cc79a7')
+```

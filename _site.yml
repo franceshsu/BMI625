@@ -1,0 +1,14 @@
+navbar:
+  title: BMI 5/625
+  left:
+    - text: Main
+      href: content.html
+    - text: Photo
+      href: content/photo.html
+    - text: Life Expectancy
+      href: content/life_expectancy.html
+    - text: Bio
+      href: content/bio.html
+output:
+  html_document:
+    theme: flatly

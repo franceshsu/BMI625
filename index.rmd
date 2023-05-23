@@ -1,0 +1,10 @@
+---
+title: "BMI 5/625"
+output: html_document
+---
+
+Oregon Health & Science University
+
+Department of Medical Informatics and Clinical Epidemiology
+
+BMI 5/625 Data Visualization
